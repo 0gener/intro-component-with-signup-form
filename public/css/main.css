@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  color: #ff7a7a;
+  font-weight: 600;
+  text-decoration: none; }
+
+.btn {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  border-radius: 7px;
+  font-size: 1rem; }
+  .btn:focus {
+    outline: none; }
+
+.inp {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: transparent;
+  border: 1px solid #b9b6d3;
+  color: #3e3c49;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif; }
+  .inp:focus {
+    outline: none; }
+
+.attribution {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 11px;
+  text-align: center; }
+  .attribution a {
+    color: #3e52a3; }
+
+.main_page {
+  width: 100%;
+  height: 100%;
+  background-color: #ff7a7a;
+  background-image: url("../images/bg-intro-mobile.png");
+  font-size: 16px; }
+  .main_page .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: auto; }
+  .main_page .info {
+    margin-top: 50px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center; }
+    .main_page .info h1 {
+      font-size: 2rem;
+      margin-bottom: 20px; }
+  .main_page .form {
+    width: 100%;
+    font-family: 'Poppins', sans-serif; }
+    .main_page .form .btn.try_it {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      background-color: #6055a5; }
+    .main_page .form form {
+      padding: 25px;
+      background-color: white;
+      border-radius: 7px; }
+    .main_page .form .inp {
+      margin-bottom: 20px; }
+    .main_page .form .btn.submit {
+      background-color: #38cc8c;
+      margin-bottom: 10px; }
+    .main_page .form .terms {
+      font-size: 0.7rem; }
