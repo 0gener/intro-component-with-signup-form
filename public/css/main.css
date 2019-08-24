@@ -19,19 +19,41 @@ a {
   .btn:focus {
     outline: none; }
 
-.inp {
-  display: block;
+.inp .inp__item {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
   width: 100%;
   padding: 15px;
-  background-color: transparent;
   border: 1px solid #b9b6d3;
-  color: #3e3c49;
-  border-radius: 5px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  font-family: 'Poppins', sans-serif; }
-  .inp:focus {
+  border-radius: 5px; }
+  .inp .inp__item input {
+    border: none;
+    width: 100%;
+    background-color: transparent;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #3e3c49; }
+  .inp .inp__item input:focus {
     outline: none; }
+  .inp .inp__item img {
+    display: none; }
+
+.inp p {
+  visibility: hidden;
+  text-align: end;
+  font-style: italic;
+  font-size: 0.7rem;
+  color: #ff7a7a; }
+
+.inp.invalid .inp__item {
+  border-color: #ff7a7a; }
+  .inp.invalid .inp__item img {
+    display: block; }
+
+.inp.invalid p {
+  visibility: visible; }
 
 .attribution {
   margin-top: 20px;

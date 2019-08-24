@@ -25,19 +25,54 @@ a {
 }
 
 .inp {
-    display: block;
-    width: 100%;
-    padding: 15px;
-    background-color: transparent;
-    border: 1px solid $grayish_blue;
-    color: $dark_blue;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
+    .inp__item {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        width: 100%;
+        padding: 15px;
+        border: 1px solid $grayish_blue;
+        border-radius: 5px;
 
-    &:focus {
-        outline: none;
+        input {
+            border: none;
+            width: 100%;
+            background-color: transparent;
+            font-size: 0.9rem;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            color: $dark_blue;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        img {
+            display: none;
+        }
+    }
+
+    p {
+        visibility: hidden;
+        text-align: end;
+        font-style: italic;
+        font-size: 0.7rem;
+        color: $primary;
+    }
+
+    &.invalid {
+        .inp__item {
+            border-color: $primary;
+
+            img {
+                display: block;
+            }
+        }
+
+        p {
+            visibility: visible;
+        }
     }
 }
 

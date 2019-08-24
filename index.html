@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="public/css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
 
+  <script src="./public/js/_common.js"></script>
+  <script src="./public/js/index.js"></script>
+
   <title>Frontend Mentor | Intro component with sign up form</title>
 </head>
 
@@ -30,10 +33,35 @@
       </button>
 
       <form>
-        <input class="inp" type="text" placeholder="First Name">
-        <input class="inp" type="text" placeholder="Last Name">
-        <input class="inp" type="email" placeholder="Email Address">
-        <input class="inp" type="password" placeholder="Password">
+        <div class="inp mandatory">
+          <div class="inp__item">
+            <input type="text" placeholder="First Name">
+            <img src="public/images/icon-error.svg" alt="Invalid">
+          </div>
+          <p>First Name cannot be empty</p>
+        </div>
+        <div class="inp mandatory">
+          <div class="inp__item">
+            <input type="text" placeholder="Last Name">
+            <img src="public/images/icon-error.svg" alt="Invalid">
+          </div>
+          <p>Last Name cannot be empty</p>
+        </div>
+        <div class="inp mandatory">
+          <div class="inp__item">
+            <input type="email" placeholder="Email Address">
+            <img src="public/images/icon-error.svg" alt="Invalid">
+          </div>
+          <p>Email Address cannot be empty</p>
+        </div>
+        <div class="inp mandatory">
+          <div class="inp__item">
+            <input type="password" placeholder="Password">
+            <img src="public/images/icon-error.svg" alt="Invalid">
+          </div>
+          <p>Password cannot be empty</p>
+        </div>
+
         <button type="submit" class="btn submit">
           Claim your free trial
         </button>
